@@ -21,21 +21,11 @@ public class AireAcondicionado
     }
 
     public void subirTemperatura(){
-        if (maximo<temperatura){
-            System.out.println();
-        }
-        else {
             temperatura = temperatura + incremento;
-        }
     }
     
     public void bajarTemperatura(){
-        if (minimo<temperatura){
-            System.out.println();
-        }
-        else {
             temperatura = temperatura - incremento;
-        }
     }
     
     public float getTemperatura(){
@@ -43,11 +33,11 @@ public class AireAcondicionado
     }
     
     public float setIncremento(float incrementoDe){
-        if (incremento<0){
+        if (incrementoDe<0){
             System.out.println();
         }
         else {
-            incremento = incremento + incrementoDe;
+            incremento = incrementoDe;
         }
         return incremento;
     }
