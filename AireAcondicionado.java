@@ -21,11 +21,21 @@ public class AireAcondicionado
     }
 
     public void subirTemperatura(){
+        if (maximo<temperatura){
+            System.out.println();
+        }
+        else {
             temperatura = temperatura + incremento;
+        }
     }
     
     public void bajarTemperatura(){
+       if (minimo<temperatura){
+            System.out.println();
+        }
+        else {
             temperatura = temperatura - incremento;
+        }
     }
     
     public float getTemperatura(){
