@@ -24,11 +24,17 @@ public class AireAcondicionado
         if (maximo>=(temperatura+incremento)){
             temperatura = temperatura + incremento;
         }
+       else {
+        temperatura = maximo;
+       }
     }
     
     public void bajarTemperatura(){
        if (minimo<=(temperatura-incremento)){
             temperatura = temperatura - incremento;
+       }
+       else {
+        temperatura = minimo;
        }
     }
     
