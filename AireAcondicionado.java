@@ -33,10 +33,7 @@ public class AireAcondicionado
     }
     
     public float setIncremento(float incrementoDe){
-        if (incrementoDe<0){
-            System.out.println();
-        }
-        else {
+        if (incrementoDe>0){
             incremento = incrementoDe;
         }
         return incremento;
