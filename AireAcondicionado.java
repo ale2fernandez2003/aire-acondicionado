@@ -49,4 +49,14 @@ public class AireAcondicionado
         return incremento;
     }
     
+    public void imprimirInformacion(){
+        System.out.println("Temperatura actual: " +temperatura+"º"); 
+        System.out.println("Temp. máxima posible: "+ maximo+"º");
+        System.out.println("Temp. minima posible: "+ minimo+"º");
+    }
+    
+    public String getInformacion(){
+        return ("Temperatura actual: " +temperatura+"º" +"Temp. máxima posible: "+ maximo+"º" + ", Temp. máxima posible: "+ minimo+"º");
+    }
+    
 }
