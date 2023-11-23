@@ -22,8 +22,8 @@ public class AireAcondicionado
         incremento = 3.0f;
         minimo = minimoDe;
         maximo = maximoDe;
-        temperaturaMax = 0;
-        temperaturaMin = 0;
+        temperaturaMax = temperatura;
+        temperaturaMin = temperatura;
         cantVecesTemperatura = 0;
         cantTemperatura = 0;
     }
@@ -32,7 +32,7 @@ public class AireAcondicionado
         if (maximo>=(temperatura+incremento)){
             temperatura = temperatura + incremento;
             if (temperatura > temperaturaMax){
-                temperaturaMax = maximo;
+                temperaturaMax = temperatura;
             }
             cantTemperatura += 1;
         }
@@ -46,7 +46,7 @@ public class AireAcondicionado
        if (minimo<=(temperatura-incremento)){
             temperatura = temperatura - incremento;
             if (temperatura < temperaturaMin){
-                temperaturaMin = minimo;
+                temperaturaMin = temperatura;
             }
             cantTemperatura += 1;
        }
