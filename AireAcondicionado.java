@@ -32,7 +32,7 @@ public class AireAcondicionado
         if (maximo>=(temperatura+incremento)){
             temperatura = temperatura + incremento;
             if (temperatura > temperaturaMax){
-                temperaturaMax = temperatura;
+                temperaturaMax = maximo;
             }
             cantTemperatura += 1;
         }
@@ -46,7 +46,7 @@ public class AireAcondicionado
        if (minimo<=(temperatura-incremento)){
             temperatura = temperatura - incremento;
             if (temperatura < temperaturaMin){
-                temperaturaMin = temperatura;
+                temperaturaMin = minimo;
             }
             cantTemperatura += 1;
        }
@@ -73,7 +73,7 @@ public class AireAcondicionado
         System.out.println("Temp. minima posible: "+ minimo+"º");
         System.out.println("Temp. máxima seleccionada desde el arranque: "+ temperaturaMax +"º");
         System.out.println("Temp. minima seleccionada desde el arranque: "+ temperaturaMin +"º");
-        System.out.println(cantVecesTemperatura+" intentos de cambio de temperatura ("+cantTemperatura+" cambios llevados a cabo realmente");
+        System.out.println(cantVecesTemperatura+" intentos de cambio de temperatura ("+cantTemperatura+" cambios llevados a cabo realmente)");
     }
     
     public String getInformacion(){
